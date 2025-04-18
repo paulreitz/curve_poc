@@ -1,0 +1,75 @@
+.curveSelector {
+    padding: 1.5rem;
+    background-color: #2a2c2e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #e8e8e8;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #e8e8e8;
+    }
+  
+    .radioGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .radioItem {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      
+      input[type="radio"] {
+        appearance: none;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #555759;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+        position: relative;
+        cursor: pointer;
+  
+        &:checked {
+          border-color: #4d90fe;
+          
+          &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.6rem;
+            height: 0.6rem;
+            background-color: #4d90fe;
+            border-radius: 50%;
+          }
+        }
+  
+        &:focus {
+          outline: 2px solid rgba(77, 144, 254, 0.5);
+        }
+      }
+  
+      label {
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  
+    .currentSelection {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444648;
+      font-size: 0.9rem;
+      color: #aaaaaa;
+  
+      span {
+        color: #4d90fe;
+        font-weight: 500;
+      }
+    }
+  }
