@@ -9,7 +9,6 @@
   
   .sidebar {
     grid-area: sidebar;
-    /* Additional styling for the sidebar */
     background-color: #2a2c2e;
     border-radius: 8px;
     padding: 1rem;
@@ -17,13 +16,11 @@
   
   .main {
     grid-area: main;
-    /* Additional styling for the main content */
     background-color: #2a2c2e;
     border-radius: 8px;
     padding: 1rem;
   }
   
-  /* Media query for responsive layout */
   @media (max-width: 768px) {
     .App {
       grid-template-columns: 1fr;

@@ -65,7 +65,7 @@ export default class Simulation {
         );
         
         if (scene.input.keyboard) {
-            this.moveKey = scene.input.keyboard.addKey(PHASER.Input.Keyboard.KeyCodes.M);
+            this.moveKey = scene.input.keyboard.addKey(PHASER.Input.Keyboard.KeyCodes.SPACE);
         } else {
             console.warn('Keyboard input is not available.');
         }
@@ -73,7 +73,7 @@ export default class Simulation {
         scene.add.text(
             10, 
             10, 
-            'Press M to move the circle', 
+            'Press <SPACE> to move the circle', 
             { 
                 color: '#FFFFFF', 
                 fontSize: '18px' 

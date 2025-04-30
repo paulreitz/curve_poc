@@ -51,7 +51,7 @@ function easeInOut(start: PHASER.Geom.Point, end: PHASER.Geom.Point, time: numbe
   return new PHASER.Geom.Point(x, y);
 }
 
-function curveFactory(): getCurvePoint {
+export default function curveFactory(): getCurvePoint {
   
   switch (selectedCurve()) {
     case CurveType.EASE_OUT:
@@ -65,5 +65,3 @@ function curveFactory(): getCurvePoint {
       return linear;
   }
 }
-
-export default curveFactory;

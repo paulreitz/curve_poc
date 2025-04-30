@@ -12,7 +12,7 @@ const CurveSelector: Component = () => {
     })
 
     return (
-        <div class={styles.curveSelector}>
+        <div class={styles.container}>
             <canvas id={canvasID()} class={styles.canvas} />
         </div>
     );

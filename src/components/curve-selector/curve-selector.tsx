@@ -16,7 +16,7 @@ const CurveSelector: Component = () => {
   };
 
   return (
-    <div class={styles.curveSelector}>
+    <div class={styles.container}>
       <h2>Select Animation Curve</h2>
       
       <div class={styles.radioGroup}>
